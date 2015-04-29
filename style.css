@@ -1,0 +1,19 @@
+/*
+Theme Name: Huskytech
+Author: Sam Menza
+Author URI: http: //knowledgebase.huskytech.uconn.edu/
+Description: Child theme of Hale for the Huskytech Knowledgebase
+Version: 1.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: hale
+Template: hale
+/* =Imports styles from the parent theme
+-------------------------------------------------------------- */
+@import url('../hale/style.css');
+/* =Theme customization starts here
+-------------------------------------------------------------- */
+@import url('stylesheets/screen.css');
+@import url('stylesheets/footer.css');
+@import url('stylesheets/paper-shadow.css');
+

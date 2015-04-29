@@ -1,0 +1,155 @@
+/* Student */
+
+@mixin question-borders{
+	border-style:solid;
+	border-width:1px;
+	border-right-color:transparent;
+	border-left-color:transparent;
+	border-top-color:$uconn-blue;
+	border-bottom-color:transparent;
+		
+}
+
+strong{
+	font-weight:bold !important;	
+}
+
+.student-row1{
+	z-index:3;
+	h2{
+		margin-left: 20px;	
+		width:380px;
+	}	
+}
+
+.student-row3, .student-row2, .student-row1{
+	position:relative;	
+}
+
+.student-row2{
+	top:10px;
+	.student-picture{
+		overflow: hidden;
+		max-height: 195px;	
+		img{
+			min-height: 195px;	
+		}
+	}
+}
+
+.student-row3{
+	height:100px;
+	background-color:$uconn-blue;
+	h2{
+		font-size: 26pt;
+		color: white;
+		font-family: Tahoma, Verdana, Segoe, sans-serif;
+		position: relative;
+		top: 35px;
+		width: 190px;
+		margin-left: 20px;	
+	}
+}
+
+.student-row4{
+	padding-bottom:15px;
+	border-top-width:2px;
+	border-bottom-width:1px;
+	margin-bottom:50px;
+	.panel-title a{
+		color:$uconn-blue;
+		transition:color .2s;
+		-webkit-transition:color .2s;
+		font-size:15pt;	
+		font-weight:bold;
+	}
+	.panel-body{
+		padding-top:10px;
+	}
+	.panel-title a:hover{
+		color:#4f5f8e;
+		text-decoration:none;
+	}
+	.panel{
+		@include question-borders();
+		padding-bottom:5px;
+	}
+	.panel:first-child{
+		border-top-color: #0f1938;
+		border-top-width:2px;	
+	}
+	.panel-last{
+		border-bottom-width:2px;	
+	}
+	ul, ol, li {
+	list-style: disc;
+	}
+}
+
+.student-list{
+	list-style: disc;
+	padding-left: 20px;
+}
+
+.student-row5{
+	margin-top:50px;
+	margin-bottom:200px;
+	.postit{
+		cursor:pointer;
+		padding:20px;
+		border-bottom-right-radius:15%;
+		min-height:230px;
+		p:nth-child(1){
+			cursor:pointer;	
+		}
+		p{
+			color:white;
+			font-size:21px;	
+			cursor:context-menu;
+		}
+	}
+	.postit1{
+		background-color:$uconn-blue;
+	}
+	.postit2{
+		background-color:$teal;
+	}
+	.postit3{
+		background-color:$medium-grey;
+	}
+}
+
+@media only screen and (max-width:768px){
+
+.student-row5{
+	.postit{
+		margin-top:30px;
+	}
+}
+	
+.student-picture:nth-child(2){
+	display:none;
+}
+
+.student-picture:nth-child(1){
+	width:100% !important;	
+	img{
+		min-width:768px;	
+	}
+}
+
+.grad-student-title{
+	margin-left: -35px !important;
+}
+	
+}
+
+@media only screen and (max-width:470px){
+	
+	.student-row1{
+		h2{
+			width:200px;
+		}	
+	}
+
+}

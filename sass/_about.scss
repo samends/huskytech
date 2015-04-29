@@ -1,0 +1,263 @@
+/*About */
+
+@mixin about-font{
+	h1{
+		font-size	:18pt;
+		font-weight:bold;
+	}
+	
+	p{
+		font-size:12pt;
+		line-height:140%;	
+	}	
+}
+
+.font60{
+	font-size:60pt;	
+}
+
+.desktop-none{
+	display:none;	
+}
+
+.about-row1{
+	position:relative;
+	top:10px;
+	
+	h2{
+		font-size:26pt;
+		color:white;
+		font-family:$font-stack;
+		position: relative;
+		top: 25px;
+		width: 190px;
+	}
+	
+}
+
+
+.top-swerve{
+	background-image:url('../img/our-mission.png');
+	background-position:center;	
+	height:$header-height;
+	background-color:$uconn-blue;
+	background-repeat:no-repeat;
+	width:100%;
+}
+
+.carousel{
+	margin-bottom:0px;	
+}
+
+.about-row2{
+	margin-bottom:80px;
+	margin-top:20px;	
+}
+
+.about-row3, .about-row4, .about-row5{
+	margin-bottom:20px;
+	margin-top:20px;	
+	height:100px;
+	.top-picture{
+		height:100px;	
+	}
+}
+
+.about-row2{
+	position: relative;
+	top: 20px;
+	margin-bottom:40px;	
+}
+
+.about-r2c1{
+	background-image:url('../img/our-mission-background.png');
+	background-repeat:no-repeat;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+	height: 320px;
+	background-color:$uconn-blue;
+	color:white;
+	.our-mission{
+		line-height: 210%;
+	}
+	
+	h2{
+		font-size:20pt;	
+		color:white;
+		font-family:$font-stack;
+		padding: 55px;
+		position: relative;
+		top: -10px;
+	}
+}
+
+.about-r2c2{
+	height:320px;
+	.top-picture{
+		height:320px;	
+	}
+}
+
+
+.about-r2c1-mobile{
+		color:$uconn-blue;
+		position:relative;
+		top:100px;	
+		h2{
+			font-size:20pt;
+			font-family:$font-stack;
+		}
+}
+
+.about-row{
+	background-color:$uconn-blue;
+	width:100%;
+	height:2px;
+}
+
+.about-row3{
+
+	font-family:$font-stack;
+	@include about-font();
+}
+
+.about-row4{
+
+	font-family:$font-stack;
+	@include about-font();
+}
+
+.about-row5{
+	margin-bottom:100px;
+	font-family:$font-stack;
+	@include about-font();
+}
+
+
+/* Media Queries */
+
+@media only screen and (max-width : 1200px) {
+
+	.about-r2c1{
+		height: 320px;
+		background-size: cover;
+		h2{
+			font-size:14pt;
+			top:10px;	
+		}
+	
+	}
+	.about-row3, .about-row4, .about-row5 {
+		height: 150px;
+	}
+}
+
+@media only screen and (max-width : 980px) {
+	
+	.top-swerve{
+	background-image:url('../img/our-mission-980.png');
+	background-repeat:no-repeat;
+	h2{
+		left: 40px;
+	}
+}
+
+	.about-r2c1{
+		background-image:url('../img/our-mission-background-980.png');
+		-webkit-background-size: cover;
+  		-moz-background-size: cover;
+  		-o-background-size: cover;
+  		background-size: cover;
+  		background-size: 100% 100%;
+		height: 320px;
+		
+		h2{
+			font-size: 14pt;
+			top: 0px;
+		}
+		
+		}
+
+}
+
+@media only screen and (max-width : 768px) {
+	.about-r2c1{
+		height: 187px;
+	}
+	.about-r2c1-mobile{
+		margin-bottom: 120px;
+		height: 0px;
+			.our-mission{
+				font-size	:18pt;
+				font-weight:bold;
+			  }
+	
+			p{
+				font-size:12pt;
+				line-height:140%;	
+			}	
+			h2{
+				position: relative;
+				bottom: 65px;	
+			}
+	}
+	
+	.desktop-none{
+		display:inline;	
+	}
+	.about-row1{
+	position:relative;
+	top:10px;
+		h2{
+			font-size:20pt;
+		}	
+	}
+	.about-row3, .about-row4, .about-row5{
+		margin-bottom: 80px;
+		.span7{
+			padding: 20px;	
+		}
+	}
+
+}
+
+@media only screen and (max-width : 560px) {
+	.about-r2c1{
+		height: 187px;
+		
+		h2{
+			font-size: 11pt;
+			top: -20px;
+		}
+		
+		}
+		.about-row3, .about-row4, .about-row5{
+			margin-bottom: 200px;
+		}
+		
+		.about-row3{
+			img{
+				position:relative;
+				left:40px;	
+			}
+		}
+		
+		.about-row4{
+			img{
+				display:none;
+				visibility:hidden;	
+			}
+		}
+	.about-row3 .span2, .about-row5 .span2{
+		display:none;	
+	}
+	.top-picture{
+		display:none;	
+	}
+	.about-r2c1-mobile {
+		margin-bottom: 180px;
+	}
+
+}

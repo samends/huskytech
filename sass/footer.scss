@@ -1,0 +1,20 @@
+#uc-footer{
+  position: static;
+  bottom: 0px;
+  width: 100%;
+  height: 200px;
+  background-color:#0F1938;
+  z-index:20;	
+  padding:0px;
+  padding-bottom:25px;
+  padding-top:10px;
+}
+
+#uc-footer .menu-item-object-page{
+	display:none;	
+}
+
+#uc-footer-links{
+	top: 20px;
+	position: relative;	
+}

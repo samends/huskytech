@@ -1,0 +1,37 @@
+// Minimum screen size for Medium screen / tablet.
+$screen-sm-min: 764px;
+$screen-is-max: 1200px;
+
+// Container width for the custom grid.
+//
+// Set the container width, and override it for fixed navbars in media queries.
+.container {
+  @media (min-width: $screen-is-min) and (max-width: $screen-is-max) {
+    width: $ContainerPhone;
+  }
+}
+
+// Function that creates the custom grid
+// Intermediate small grid
+@media (min-width: $screen-is-min) and (max-width: $screen-is-max) {
+  @include make-grid(is);
+}
+
+// Add visibility class for the custom grid
+@media (min-width: $screen-is-min) and (max-width: $screen-is-max) {
+  @include responsive-visibility('.visible-is');
+}
+
+// Add hidden class for the custom grid
+@media (min-width: $screen-is-min) and (max-width: $screen-is-max) {
+  @include responsive-invisibility('.hidden-is');
+}
+
+// Define this class as hidden in all other grid widths.
+@media (min-width: $screen-is-max) {
+  @include responsive-invisibility('.visible-is');
+}
+
+@media (max-width: $screen-is-min) {
+  @include responsive-invisibility('.visible-is');
+}

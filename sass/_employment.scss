@@ -1,0 +1,178 @@
+/* Employment */
+
+	.employ-list{
+		list-style: disc;
+		padding-left: 20px;
+	}
+body {
+	font-family:$font-stack;	
+}
+@mixin border-top-bottom{
+	border-style:solid;
+	border-width:2px;
+	border-right-color:transparent;
+	border-left-color:transparent;
+	border-top-color:$uconn-blue;
+	border-bottom-color:$uconn-blue;
+		
+}
+
+.employment-title h2{
+	left:5px !important;	
+}
+
+.employment-row2{
+	margin-top: 30px;
+	font-family:$font-stack;
+	h1,p{
+		color:$uconn-blue;
+		line-height:150%;
+	}
+	h1{
+		margin-top:15px;
+		margin-bottom:15px;
+		font-size:15pt;
+		font-weight:bold;
+	}	
+	p{
+		font-size:12pt;	
+		width:80%;
+	}
+	.row-fluid img{
+		width:80%;
+	}
+	.employ-list{
+		list-style: disc;
+		padding-left: 20px;
+	}
+	.job-qual{
+		list-style: disc;
+		padding-left: 20px;
+	}
+	.job-qualification{
+		margin-left:20px;	
+	}
+}
+
+.employment-3{
+    float: right;
+	img{
+	float:right;
+	}
+	p{
+		float:right;
+	}
+	h1{
+		width: 80%;
+		float: right;	
+	}
+}
+
+.employment-row3, .employment-row4{
+	@include border-top-bottom();
+	padding-top:15px;
+	padding-bottom:15px;
+	margin-top:50px;
+	border-top-width:2px;
+	border-bottom-width:1px;
+	.panel-title a{
+		color:$uconn-blue;
+		transition:color .2s;
+		-webkit-transition:color .2s;
+		font-size:15pt;	
+		font-weight:bold;
+	}
+	.panel-title a:hover{
+		color:#4f5f8e;
+		text-decoration:none;
+	}
+}
+
+.employment-row4{
+	@include border-top-bottom();
+	border-top-width:1px;
+	border-bottom-width:2px;
+	margin-bottom:30px;
+	margin-top:0px;
+}
+
+.employment-row5 {
+	.employment-status{
+	font-size:15pt;
+	font-weight:bold;	
+}
+
+	.x-icon,.check-icon{
+		top: 8px;
+		position: relative;
+		left: 10px;	
+	}
+	
+	
+}
+
+.employment-row8{
+	margin-bottom:80px;	
+	margin-top:10px;
+	
+}
+
+.employment-row2-mobile{
+	.carousel-inner{
+			margin-top: 100px;
+			height: 300px;	
+	}
+		font-family:$font-stack;
+	h1,p{
+		color:$uconn-blue;
+		line-height:150%;
+	}
+	h1{
+		margin-top:15px;
+		margin-bottom:15px;
+		font-size:15pt;
+		font-weight:bold;
+	}	
+	p{
+		font-size:12pt;	
+	}
+	.carousel-control{
+		display:none;
+	}
+}
+
+paper-button {
+  text-transform: none;
+}
+@media only screen and (min-width : 1200px) {
+.employment-3{
+	h1{
+
+
+	}
+}
+}
+
+@media only screen and (max-width : 980px) {
+.employment-3{
+	h1{
+		float:right;
+	}
+}
+}
+
+@media only screen and (max-width : 980px) {
+	.employment-status{
+		img{
+			width:30px;
+			height:30px;
+		}	
+	}
+	
+@media only screen and (max-width : 768px) {
+	.connected-row1 h2 {
+		min-width: 218px !important;
+	}
+}
+
+}

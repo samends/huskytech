@@ -1,0 +1,48 @@
+ <style shim-shadowdom>
+ /* Paper-button style */
+        body {
+      font-size: 14px;
+      transform: translateZ(0);
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+    }
+    h1 {
+      margin-bottom: 2em;
+    }
+
+
+    paper-button {
+      width: 10em;
+      background: #7f7f7f;
+      color:white;
+      transition: background .1s;
+    }
+    paper-button:hover {
+      background: #d11717;
+    }
+
+    paper-button.colored {
+      color: #4285f4;
+      fill: #0F1938;
+    }
+
+    paper-button[raisedButton].colored {
+      background: #0F1938;
+      color: #fff;
+    }
+    paper-button[raisedButton].colored.hover:hover {
+      background: #4b5c8e;
+    }
+    paper-button[raisedButton].colored::shadow #ripple {
+      color: #8b9dd3;
+    }
+    paper-button[raisedButton].colored::shadow #focusBg {
+      background: #8b9dd3;
+    }
+
+    .label {
+      text-align: left;
+      color: #bbb;
+      font-size: 12px;
+      margin-top: 2em;
+    }
